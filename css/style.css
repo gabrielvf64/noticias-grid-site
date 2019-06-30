@@ -35,6 +35,10 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 img {
   width: 100%;
 }
@@ -163,6 +167,28 @@ h6 {
   padding: 3rem 0;
 }
 
+.lista li {
+  padding: 0.5rem 0;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.lista li a:hover {
+  color: var(--cor-primaria) !important;
+}
+
+/* Container do grid nas páginas internas */
+.container-pagina {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.container-pagina > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 /* Navegação */
 #barra-de-navegacao {
   background: var(--cor-clara);
@@ -267,4 +293,42 @@ h6 {
 #artigos-home .container-artigos > *:last-child {
   /* Esse começa na segunda coluna */
   grid-column: 2 / span 2;
+}
+
+/* Footer */
+#footer-principal {
+  background: var(--cor-escura);
+  color: #fff;
+}
+
+#footer-principal img {
+  width: 150px;
+}
+
+#footer-principal a {
+  color: #fff;
+}
+
+#footer-principal .container-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#footer-principal .container-footer > *:last-child {
+  background: #444;
+  grid-column: 1 / span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+#footer-principal .container-footer input[type="email"] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#footer-principal .container-footer input[type="submit"] {
+  width: 90%;
 }
