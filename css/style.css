@@ -102,6 +102,11 @@ h6 {
   opacity: 0.9;
 }
 
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
 .btn-block {
   display: block;
   width: 100%;
@@ -190,3 +195,27 @@ h6 {
 #principal .principal-conteudo p {
   margin-bottom: 1rem;
 }
+
+/* Artigos na Home */
+
+#artigos-home .container-artigos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Pege o primeiro e o último filho qualquer que seja a tag */
+#artigos-home .container-artigos > *:first-child,
+#artigos-home .container-artigos > *:last-child { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+
+#artigos-home .container-artigos > *:last-child {
+  /* Esse começa na segunda coluna */
+  grid-column: 2 / span 2;
+}
+
