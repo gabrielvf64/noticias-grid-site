@@ -113,6 +113,56 @@ h6 {
   text-align: center;
 }
 
+.bg-escuro {
+  background: var(--cor-escura);
+  color: #fff;
+}
+
+.bg-primario {
+  background: var(--cor-primaria);
+  color: #fff;
+}
+
+.bg-secundario {
+  background: var(--cor-secundaria);
+  color: #fff;
+}
+
+/* Corrigindo problema do cabecalho do artigo que tem mesma cor do fundo */
+.bg-escuro h1,
+.bg-escuro h2,
+.bg-escuro h3,
+.bg-escuro a,
+.bg-primario h1,
+.bg-primario h2,
+.bg-primario h3,
+.bg-primario a,
+.bg-secundario h1,
+.bg-secundario h2,
+.bg-secundario h3,
+.bg-secundario a {
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem 0;
+}
+.p-2 {
+  padding: 2rem 0;
+}
+.p-3 {
+  padding: 3rem 0;
+}
+
 /* Navegação */
 #barra-de-navegacao {
   background: var(--cor-clara);
@@ -206,7 +256,7 @@ h6 {
 
 /* Pege o primeiro e o último filho qualquer que seja a tag */
 #artigos-home .container-artigos > *:first-child,
-#artigos-home .container-artigos > *:last-child { 
+#artigos-home .container-artigos > *:last-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
@@ -218,4 +268,3 @@ h6 {
   /* Esse começa na segunda coluna */
   grid-column: 2 / span 2;
 }
-
