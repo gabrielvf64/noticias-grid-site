@@ -167,6 +167,10 @@ h6 {
   padding: 3rem 0;
 }
 
+.cabecalho-grande {
+  font-size: 3rem;
+}
+
 .lista li {
   padding: 0.5rem 0;
   border-bottom: #555 dotted 1px;
@@ -295,6 +299,17 @@ h6 {
   grid-column: 2 / span 2;
 }
 
+#artigo .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#artigo .meta .categoria {
+  margin-top: 0.4rem;
+}
 /* Footer */
 #footer-principal {
   background: var(--cor-escura);
