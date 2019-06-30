@@ -1,0 +1,60 @@
+/* Barra de navegação */
+#barra-de-navegacao .social {
+  display: none;
+}
+
+#barra-de-navegacao .container {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+}
+
+#barra-de-navegacao .logo,
+#barra-de-navegacao ul {
+  justify-self: center;
+}
+
+#barra-de-navegacao ul li a {
+  padding: 0.5rem;
+}
+
+#artigos-home .container-artigos {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#artigos-home .container-artigos > *:first-child,
+#artigos-home .container-artigos > *:last-child {
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+@media (max-width: 600px) {
+  /* Empilhando Itens Grid */
+  #principal .principal-container,
+  #artigos-home .container-artigos,
+  #footer-principal .container-footer {
+    grid-template-columns: 1fr;
+  }
+
+  #footer-principal .container-footer > *:last-child {
+    grid-column: 1;
+  }
+
+  #footer-principal .container-footer > *:first-child,
+  #footer-principal .container-footer > *:nth-child(2) {
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+
+  .container-pagina {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .container-pagina > *:first-child {
+    grid-row: 1;
+  }
+
+  .cabecalho-grande {
+    font-size: 2rem;
+  }
+}
